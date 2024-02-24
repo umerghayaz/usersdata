@@ -188,7 +188,8 @@ const ListPage = () => {
         filteredList={filteredList}
         data={data}
       />
-      <Table columns={columns} dataSource={filteredList} bordered />
+      <Table columns={columns} dataSource={filteredList} bordered  scroll={{ x: '960' }}
+ />
     </div>
   );
 };

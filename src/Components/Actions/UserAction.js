@@ -19,9 +19,9 @@ export const getUsers = () => dispatch => {
   }
 
 // i have not used it but implemented its full functionality
-export const getByName = (name) => dispatch => {
+export const getByName = (id) => dispatch => {
     // dispatch(CustomersLoading())
-    axios.get(`https://api.github.com/users/${name}`,{
+    axios.get(`https://api.github.com/users/${id}`,{
         headers: {
           'Authorization': `token ${token}`,
           'X-GitHub-Api-Version': '2022-11-28'
